@@ -26,7 +26,7 @@ const GenreDropDown = ({ handleGenreChange, topTwenty }) => {
 					Country
 				</option>
 			</select>
-			<ol>{songList}</ol>
+			<p>{topTwenty.length ? <ol>{songList}</ol> : 'Awaiting choice'}</p>
 		</>
 	);
 };
